@@ -4,69 +4,80 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bolang Travel (OPC) Private Limited — Official Site</title>
-  <meta name="description" content="Official website of Bolang Travel (OPC) Private Limited, the company behind OmyTribe — a travel‑tribe app for discovering hostels, events, and local communities." />
+  <meta name="description" content="Official website of Bolang Travel (OPC) Private Limited, the company behind OmyTribe — a travel-tribe app for discovering hostels, events, and local communities." />
   <link rel="canonical" href="https://bolangtravel.in/" />
-  <!-- Open Graph -->
   <meta property="og:title" content="Bolang Travel (OPC) Private Limited" />
-  <meta property="og:description" content="Company behind OmyTribe — a travel‑tribe app for discovering hostels, events, and local communities." />
+  <meta property="og:description" content="Company behind OmyTribe — a travel-tribe app for discovering hostels, events, and local communities." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://bolangtravel.in/" />
   <meta property="og:image" content="https://bolangtravel.in/og-image.png" />
   <style>
     :root {
-      --bg: #0f172a;        /* slate-900 */
-      --card: #111827;      /* gray-900 */
-      --muted: #94a3b8;     /* slate-400 */
-      --text: #e5e7eb;      /* gray-200 */
-      --accent: #22d3ee;    /* cyan-400 */
-      --accent2: #38bdf8;   /* sky-400 */
+      --primary: #19b697;
+      --light: #ffffff;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --border: #d1d5db;
     }
     * { box-sizing: border-box; }
     html, body { height: 100%; }
     body {
       margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans, "Apple Color Emoji", "Segoe UI Emoji";
-      background: radial-gradient(1200px 800px at 70% -10%, rgba(34,211,238,0.15), transparent 60%),
-                  radial-gradient(900px 600px at 10% 110%, rgba(56,189,248,0.12), transparent 60%),
-                  var(--bg);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans;
+      background: var(--light);
       color: var(--text);
       line-height: 1.6;
     }
-    a { color: var(--accent2); text-decoration: none; }
+    a { color: var(--primary); text-decoration: none; }
     a:hover { text-decoration: underline; }
-
     .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
-
-    header { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
+    header { display: flex; align-items: center; justify-content: flex-start; padding: 16px 0; }
     .brand { display: flex; align-items: center; gap: 12px; }
-    .logo { width: 40px; height: 40px; border-radius: 12px; background: linear-gradient(135deg, var(--accent), var(--accent2)); box-shadow: 0 6px 20px rgba(34,211,238,0.3); }
-    .brand h1 { margin: 0; font-size: 1.1rem; letter-spacing: .3px; }
-
+    .logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: var(--light);
+      font-weight: 900;
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .brand h1 { margin: 0; font-size: 1.1rem; letter-spacing: .3px; color: var(--text); }
     .hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px; align-items: center; padding: 36px 0 24px; }
-    .hero h2 { font-size: clamp(1.8rem, 3vw, 3rem); line-height: 1.1; margin: 0 0 12px; }
+    .hero h2 { font-size: clamp(1.8rem, 3vw, 3rem); line-height: 1.1; margin: 0 0 12px; color: var(--text); }
     .hero p { color: var(--muted); margin: 0 0 18px; font-size: 1.05rem; }
-    .cta { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, var(--accent), var(--accent2)); color: #003046; font-weight: 700; padding: 12px 16px; border-radius: 12px; box-shadow: 0 8px 24px rgba(56,189,248,0.35); }
-    .card { background: rgba(17,24,39,0.7); border: 1px solid rgba(148,163,184,0.18); border-radius: 16px; padding: 18px; }
-
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--primary);
+      color: var(--light);
+      font-weight: 700;
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: none;
+    }
+    .card {
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
     .grid { display: grid; gap: 16px; }
-    .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
     .grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
-
     section { margin: 36px 0; }
-    h3 { margin: 0 0 12px; font-size: 1.3rem; }
-
-    footer { margin-top: 36px; padding: 16px 0 40px; color: var(--muted); font-size: .95rem; }
-
-    .badge { display:inline-block; padding: 2px 8px; border-radius: 999px; background: rgba(148,163,184,0.18); color: var(--text); font-size: .8rem; }
-
+    h3 { margin: 0 0 12px; font-size: 1.3rem; color: var(--text); }
+    footer { margin-top: 36px; padding: 16px 0 40px; color: var(--muted); font-size: .95rem; border-top: 1px solid var(--border); }
+    .badge { display:inline-block; padding: 2px 8px; border-radius: 999px; background: rgba(25,182,151,0.1); color: var(--primary); font-size: .8rem; }
     @media (max-width: 860px) {
       .hero { grid-template-columns: 1fr; }
-      .grid.cols-3 { grid-template-columns: 1fr; }
       .grid.cols-2 { grid-template-columns: 1fr; }
     }
   </style>
-  
-  <!-- Structured Data for Organization (helps Apple verify) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -74,18 +85,16 @@
     "name": "Bolang Travel (OPC) Private Limited",
     "url": "https://bolangtravel.in/",
     "logo": "https://bolangtravel.in/og-image.png",
-    "sameAs": [
-      "https://omytribe.app"
-    ],
+    "sameAs": ["https://omytribe.app"],
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "<Add Registered Office Address Line 1>",
-      "addressLocality": "<City>",
-      "addressRegion": "<State>",
-      "postalCode": "<PIN>",
+      "streetAddress": "4th Floor, Plot 93, Sector 44",
+      "addressLocality": "Gurgaon",
+      "addressRegion": "Haryana",
+      "postalCode": "122003",
       "addressCountry": "IN"
     },
-    "email": "info@bolangtravel.in"
+    "email": "support@bolangtravel.in"
   }
   </script>
 </head>
@@ -93,20 +102,17 @@
   <div class="container">
     <header>
       <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
+        <div class="logo">B</div>
         <h1>Bolang Travel (OPC) Private Limited</h1>
       </div>
-      <a class="badge" href="#contact">Contact</a>
     </header>
 
     <section class="hero">
       <div>
-        <h2>Building community‑first travel experiences.</h2>
-        <p>
-          We are the company behind <strong>OmyTribe</strong> — a travel‑tribe app to discover hostels, join groups, share locations, and create events with fellow travelers.
-        </p>
+        <h2>Building community-first travel experiences.</h2>
+        <p>We are the company behind <strong>OmyTribe</strong> — a travel-tribe app to discover hostels, join groups, share locations, and create events with fellow travelers.</p>
         <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:center;">
-          <a class="cta" href="mailto:info@bolangtravel.in">Contact us</a>
+          <a class="cta" href="mailto:support@bolangtravel.in">Contact us</a>
           <a class="badge" href="https://omytribe.app" target="_blank" rel="noopener">Visit OmyTribe.app →</a>
         </div>
       </div>
@@ -123,11 +129,11 @@
           </div>
           <div>
             <div class="badge">Registered Office</div>
-            <p style="margin:.4rem 0 1rem;"><em>Add address here</em></p>
+            <p style="margin:.4rem 0 1rem;">4th Floor, Plot 93, Sector 44, Gurgaon 122003</p>
           </div>
           <div>
             <div class="badge">Contact</div>
-            <p style="margin:.4rem 0 1rem;"><a href="mailto:info@bolangtravel.in">info@bolangtravel.in</a></p>
+            <p style="margin:.4rem 0 1rem;"><a href="mailto:support@bolangtravel.in">support@bolangtravel.in</a></p>
           </div>
         </div>
       </div>
@@ -136,9 +142,7 @@
     <section id="about">
       <h3>About Bolang Travel</h3>
       <div class="card">
-        <p>
-          Founded in 2025, Bolang Travel (OPC) Private Limited focuses on building digital products that connect travelers with local communities and experiences. Our flagship product, <a href="https://omytribe.app" target="_blank" rel="noopener">OmyTribe</a>, enables users to join groups, share images and locations in chat, create and manage events, and discover nearby tribes.
-        </p>
+        <p>Founded in 2025, Bolang Travel (OPC) Private Limited focuses on building digital products that connect travelers with local communities and experiences. Our flagship product, <a href="https://omytribe.app" target="_blank" rel="noopener">OmyTribe</a>, enables users to join groups, share images and locations in chat, create and manage events, and discover nearby tribes.</p>
       </div>
     </section>
 
@@ -147,19 +151,15 @@
       <div class="card">
         <div class="grid cols-2">
           <div>
-            <p>
-              OmyTribe is a community‑driven app for backpackers and hostel travelers. It supports OTP login, group chat, event creation, and location sharing, with a focus on safety and local discovery.
-            </p>
-            <p style="margin-bottom:0;">
-              Learn more at <a href="https://omytribe.app" target="_blank" rel="noopener">omytribe.app</a>.
-            </p>
+            <p>OmyTribe is a community-driven app for backpackers and hostel travelers. It supports OTP login, group chat, event creation, and location sharing, with a focus on safety and local discovery.</p>
+            <p style="margin-bottom:0;">Learn more at <a href="https://omytribe.app" target="_blank" rel="noopener">omytribe.app</a>.</p>
           </div>
           <div>
             <ul style="margin:0; padding-left:1.1rem;">
               <li>Join and explore nearby tribes</li>
               <li>Create &amp; discover events</li>
               <li>Share images and locations in chat</li>
-              <li>QR‑based hostel referrals</li>
+              <li>QR-based hostel referrals</li>
               <li>iOS &amp; Android support</li>
             </ul>
           </div>
@@ -170,26 +170,19 @@
     <section id="contact">
       <h3>Contact</h3>
       <div class="card">
-        <p style="margin-top:0;">
-          For partnerships, media, or legal enquiries, email us at
-          <a href="mailto:info@bolangtravel.in">info@bolangtravel.in</a>.
-        </p>
-        <p style="margin-bottom:0;">
-          Support for OmyTribe users: <a href="mailto:support@omytribe.app">support@omytribe.app</a>
-        </p>
+        <p style="margin-top:0;">For partnerships, media, or legal enquiries, email us at <a href="mailto:support@bolangtravel.in">support@bolangtravel.in</a>.</p>
+        <p style="margin-bottom:0;">Support for OmyTribe users: <a href="mailto:support@omytribe.app">support@omytribe.app</a></p>
       </div>
     </section>
 
     <section id="legal">
       <h3>Legal</h3>
       <div class="card">
-        <p style="margin-top:0;">
-          © 2025 Bolang Travel (OPC) Private Limited. All rights reserved.
-        </p>
+        <p style="margin-top:0;">© 2025 Bolang Travel (OPC) Private Limited. All rights reserved.</p>
         <ul style="margin:0; padding-left:1.1rem;">
           <li>Registered as a One Person Company (OPC) under the Companies Act, 2013 (India).</li>
           <li>CIN: U79110HR2025OPC134454</li>
-          <li>Registered Office: <em>Add full address</em></li>
+          <li>Registered Office: 4th Floor, Plot 93, Sector 44, Gurgaon 122003</li>
         </ul>
       </div>
     </section>
