@@ -1,2 +1,2 @@
 # Bolangtravel.in
-website content for the bolang travel
+Read me file - website content for the bolang travel
